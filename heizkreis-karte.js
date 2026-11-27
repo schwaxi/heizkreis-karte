@@ -1,4 +1,4 @@
-// heizkreis-karte v1.0.0
+// heizkreis-karte v1.0.1
 // Einzeln installierbares Modul (Home Assistant Marketplace / HACS, Kategorie Dashboard).
 window.customCards = window.customCards || [];
 window.customCardFeatures = window.customCardFeatures || [];
@@ -226,7 +226,7 @@ class HeizkreisKarte extends HTMLElement {
 
 if (!customElements.get(TYPE12)) customElements.define(TYPE12, HeizkreisKarte);
 if (!window.customCards.some((c) => c.type === TYPE12)) {
-  window.customCards.push({ type: TYPE12, name: "Heizkreis-Karte", description: "Heizkörper oder Fußbodenheizung, eingefärbt nach Vorlauftemperatur, mit Pumpe und Sollwert" });
+  window.customCards.push({ type: TYPE12, name: "Heizkreis-Karte", description: "Heizkörper oder Fußbodenheizung, eingefärbt nach Vorlauftemperatur, mit Pumpe und Sollwert", preview: true });
 }
 }
 
